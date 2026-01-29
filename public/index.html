@@ -28,10 +28,45 @@
     <!-- Header: Mengly + Lyheng -->
     <header>
       <div class="header-fixed">
-        <div class="header-left"></div>
-        <div class="header-right"></div>
+        <div class="header-left">
+          <img class="rupp-logo" src="../src/images/rupp.svg" alt="" />
+          <hr />
+          <img class="faculty-logo" src="../src/images/faculty.svg" alt="" />
+          <img src="../src/images/tittle.svg" alt="" class="title-logo" />
+        </div>
+        <div class="header-right">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">1. Caesar Cipher</a></li>
+            <li>
+              <a href="#"
+                >1.2. General Shift Cipher
+                <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                >II. RSA Cryptography <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li><a href="#">III. FROM</a></li>
+            <li>
+              <a href="#"
+                >CURRENT STUDENT <i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
       </div>
-      <div class="header-bg-text"></div>
+      <div class="header-bg-text">
+        <h1>
+          Encryption <br />
+          Decryption <br />
+          System
+        </h1>
+        <h2>Discrete Math</h2>
+      </div>
     </header>
 
     <!-- Section: Mey + Kim + V -->
@@ -81,10 +116,27 @@
       </div>
       <div class="contact-us">
         <p>CONTACT US</p>
-        <a href="#"
-          ><img src="../icon/mail.png" alt="" />
-        </a>
+        <a href="#"><img src="../icon/mail.png" alt="" /> </a>
       </div>
     </footer>
+
+    <!--------- JavaScript------------->
+    <script>
+      function scrollRow(btn, direction) {
+        const row = btn.parentElement;
+        const container = row.querySelector(".scroll-container");
+        const scrollAmount = 500;
+        container.scrollLeft += scrollAmount * direction;
+      }
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header-fixed");
+
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
-</html> 
+</html>
