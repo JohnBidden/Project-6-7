@@ -51,9 +51,7 @@
             </li>
             <li><a href="#">III. FROM</a></li>
             <li>
-              <a href="#"
-                >CURRENT STUDENT <i class="fa-solid fa-chevron-down"></i
-              ></a>
+              <a href="#">DEMO <i class="fa-solid fa-chevron-down"></i></a>
             </li>
           </ul>
           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -75,28 +73,61 @@
         <p><i class="fa-solid fa-arrow-left"></i>back</p>
       </div>
       <div class="section-info-text">
-        <h1></h1>
-        <h2></h2>
-        <p></p>
-        <p class="strong-p">Source:<a href=""></a></p>
+        <h1>I.Classical Cryptography</h1>
+        <h2>I.I. Caesar Cipher</h2>
+        <p>
+          One of the earliest and most well-known forms of cryptography was
+          developed by Emperor Julius Caesar. During times of war, he needed a
+          way to send secret messages to his generals. His solution was simple
+          but effective: shift each letter in the alphabet by three positions.
+          For example, the letter A becomes D, B becomes E, and so on. This
+          technique came to be known as the Caesar Cipher.
+        </p>
+        <p class="strong-p">Source:<a href="">caesarcipher.net</a></p>
         <div class="main-img">
-          <img src="" alt="" />
+          <img src="../src/images/cryptex.jpg" alt="" />
         </div>
-        <p></p>
-      </div>
+        <p>
+          Emperor Julius Caesar made his messages secret by shifting each letter
+          three positions forward in the alphabet. The algorithm to encrypt a
+          message works like this:
+        </p>
 
-      <!-- how to use -->
-      <h3></h3>
-      <p></p>
-      <h3></h3>
-      <p></p>
-      <h3></h3>
-      <p></p>
-      <h3></h3>
-      <p></p>
-      <h3></h3>
-      <p></p>
-      <h3></h3>
+        <!-- how to use -->
+        <h3>1. Assign numbers to each letter:</h3>
+        <p>
+          A → 00, B → 01, C → 02, D → 03, E → 04, F → 05, G → 06, H → 07, I →
+          08, J → 09, K → 10, L → 11, M → 12, N → 13, O → 14, P → 15, Q → 16, R
+          → 17, S → 18, T → 19, U → 20, V → 21, W → 22, X → 23, Y → 24, Z → 25
+        </p>
+        <h3>2. Convert the plaintext into numbers:</h3>
+        <p>
+          For example, if the plaintext is UNGSEREYSOPEA, we convert each letter
+          to its corresponding number: UNGSEREYSOPEA → 20 13 06 18 04 17 04 24
+          18 14 15 04 00
+        </p>
+        <h3>3. Encrypt the numbers by adding 3 to each:</h3>
+        <p>
+          20 13 06 18 04 17 04 24 18 14 15 04 00 → (20+3) (13+3) (06+3) (18+3)
+          (04+3) (17+3) (04+3) (24+3) (18+3) (14+3) (15+3) (04+3) (00+3) → 23 16
+          09 21 07 20 07 27 21 17 18 07 03
+        </p>
+        <h3>
+          4. Take the result modulo 26 (to stay within the alphabet range):
+        </h3>
+        <p>
+          23 16 09 21 07 20 07 27 21 17 18 07 03 → 23(mod 26) 16(mod 26) 09(mod
+          26) 21(mod 26) 07(mod 26) 20(mod 26) 07(mod 26) 27(mod 26) 21(mod 26)
+          17(mod 26) 18(mod 26) 07(mod 26) 03(mod 26) → 23 16 09 21 07 20 07 01
+          21 17 18 07 03
+        </p>
+        <h3>5. Convert the numbers back to letters:</h3>
+        <p>
+          So, the ciphertext of the message UNGSEREYSOPEA using Caesar cipher
+          with shift k = 3 is:
+        </p>
+        <h3 class="example">Ek=3 (UNGSEREYSOPEA) = XQJVHUHBVRSHD</h3>
+      </div>
     </section>
 
     <section class="section-demo">

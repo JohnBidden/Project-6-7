@@ -1,0 +1,62 @@
+.section-info {
+  width: 90%;
+  margin: auto;
+  color: #014164;
+}
+.back {
+  margin-top: 25px;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+}
+.section-info-text {
+  width: 95%;
+  margin: auto;
+}
+.section-info-text h1 {
+  font-family: none;
+  margin-top: 25px;
+  font-size: clamp(3.2rem, 5vw, 4rem);
+}
+.section-info-text h2 {
+  font-family: none;
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+}
+.section-info-text p {
+  margin-top: 15px;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  color: #212529;
+  line-height: clamp(24px, 3vw, 27px);
+  font-weight: 350;
+  text-indent: clamp(20px, 3vw, 30px);
+}
+.section-info-text p.strong-p {
+  font-weight: 600;
+  text-indent: 0;
+}
+.strong-p a {
+  margin-left: 5px;
+  color: #014164;
+  font-weight: 400;
+}
+.main-img {
+  text-align: center;
+  margin-top: clamp(20px, 3vw, 30px);
+}
+.main-img img {
+  height: clamp(177px, 25vw, 300px);
+  max-width: 100%;
+}
+.section-info-text h3 {
+  font-family: none;
+  margin-top: clamp(7px, 2vw, 10px);
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
+}
+.section-info-text h3.example {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  color: #212529;
+}

@@ -222,9 +222,15 @@ header {
     margin: 20px 0 0 25px;
   }
   .fa-xmark,
-  .fa-solid {
+  .fa-bars {
     display: none !important;
   }
+  .header-left {
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+  }
+
   .rupp-logo,
   .faculty-logo,
   .title-logo {
