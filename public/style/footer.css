@@ -1,0 +1,179 @@
+/*---------- Submitted to ----------*/
+.submitted-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.sub-to h1 {
+  font-family: none;
+  color: #014164;
+  font-size: 3rem;
+  margin: 30px 0 40px;
+}
+.sub-info {
+  margin-bottom: 50px;
+}
+.sub-info h2 {
+  font-family: none;
+  font-size: 2rem;
+}
+.sub-info p {
+  font-size: 1.5rem;
+  font-weight: 350;
+  line-height: 22px;
+}
+/*---------- About us ----------*/
+.about-us-container {
+  width: 100%;
+  height: 600px;
+  padding-top: 20px;
+  position: relative;
+  align-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(4, 67, 104, 0.9)),
+    url(../../src/images/developer.jpg);
+}
+.text-aboutus h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  color: white;
+  font-size: 6rem;
+  width: 500px;
+}
+.text-aboutus p {
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(280px, 50%, 100%);
+  color: white;
+  text-align: center;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  line-height: 1.6;
+}
+.btn-aboutus {
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-aboutus button {
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.btn-aboutus button a {
+  text-decoration: none;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: black;
+  font-weight: 600;
+  transition: button 0.5s;
+}
+.btn-aboutus button:hover {
+  color: white;
+  background-color: rgb(4, 67, 104);
+}
+.btn-aboutus:hover a {
+  color: white;
+}
+
+@media (min-width: 1044px) {
+  .about-us-container {
+    background-position: top center;
+    height: 700px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .about-us-container {
+    background-position: top center;
+    height: 900px;
+  }
+}
+/*---------- Contact us ----------*/
+.contact-us-container {
+  background-color: #014164;
+  position: relative;
+}
+.contact-us {
+  width: 90%;
+  margin: auto;
+  color: #f5f5f5bf;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.contact-us h1 {
+  letter-spacing: 2px;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+.location-grid {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  margin: 30px 0;
+}
+.location-grid img {
+  height: 27px;
+}
+.location-grid a {
+  color: #f5f5f5bf;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  line-height: 17px;
+}
+.location-grid a:hover {
+  text-decoration: underline;
+}
+.developer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+.developer p {
+  line-height: 18px;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+}
+.admin-right {
+  display: flex; /* keep flex layout */
+  flex-direction: column; /* stack items vertically */
+  margin-left: auto; /* push the whole block to the right */
+  text-align: left; /* text inside stays left-aligned */
+}
+.github-icon {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  margin-top: 10px;
+}
+.bxl-github {
+  text-align: center;
+  margin-top: 8px;
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
+}
+.contact-us hr {
+  margin: 20px 0;
+  border: 0; /* Remove all borders */
+  border-top: 0.5px solid #f5f5f5bf;
+}
+.last-text {
+  font-size: clamp(1.5rem, 2.5vw, 1.9rem);
+  color: white;
+}
+.github-icon:hover {
+  text-decoration: underline;
+}
+.icon-grid {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+}

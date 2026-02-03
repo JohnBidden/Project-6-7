@@ -83,7 +83,9 @@
           For example, the letter A becomes D, B becomes E, and so on. This
           technique came to be known as the Caesar Cipher.
         </p>
-        <p class="strong-p">Source:<a href="">caesarcipher.net</a></p>
+        <p class="strong-p">
+          Source:<a href="https://caesarcipher.net/">caesarcipher.net</a>
+        </p>
         <div class="main-img">
           <img src="../src/images/cryptex.jpg" alt="" />
         </div>
@@ -161,19 +163,395 @@
       </div>
     </section>
 
+    <section class="section-info">
+      <div class="section-info-text">
+        <h1>I.II. General Shift Cipher</h1>
+        <p>
+          The General Shift Cipher is a more advanced version of the Caesar
+          Cipher. Instead of a fixed shift of three positions, it allows for any
+          integer value as the shift. This means that you can choose any number
+          to shift the letters in the alphabet, making it more versatile and
+          secure
+        </p>
+      </div>
+    </section>
+
+    <section class="section-demo">
+      <div class="demo">
+        <div class="section-info-text">
+          <h1>General Shift Cipher Demo</h1>
+          <div class="input-flex-1">
+            <div class="id-wrap">
+              <label for="shift" class="input-text"
+                >Enter your text (Plain text or Cipher text):</label
+              >
+              <input
+                type="text"
+                id="shift-input"
+                class="input-text-all"
+                placeholder="Enter:"
+              />
+              <label for="shift-key" class="input-num"
+                >Enter the key (No Need For Brute Force Attack):</label
+              >
+              <input
+                type="number"
+                id="shift-key"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+            </div>
+            <div class="btn-wrap">
+              <div class="button-row">
+                <button id="shift-encrypt-btn" class="blue-btn">Encrypt</button>
+                <button id="shift-decrypt-btn" class="red-btn">Decrypt</button>
+              </div>
+              <button id="shift-brute-force-btn" class="green-btn">
+                Break Force Attack
+              </button>
+              <div class="result">Result:</div>
+              <div id="shift-result" class="result-all">No Result</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-info">
+      <div class="section-info-text">
+        <h1>I.III. Affine Cipher</h1>
+        <p>
+          The Affine Cipher is a more complex encryption method that combines
+          both a shift and a multiplication operation. It uses two keys: one for
+          the shift and another for the multiplication. The formula for
+          encryption is E(x) = (ax + b) mod 26, where 'a' and 'b' are the keys,
+          and 'x' is the numerical representation of the letter.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-demo">
+      <div class="demo">
+        <div class="section-info-text">
+          <h1>General Shift Cipher Demo</h1>
+          <div class="input-flex-1">
+            <div class="id-wrap">
+              <label for="affine-input" class="input-text"
+                >Enter your text (Plain text or Cipher text):</label
+              >
+              <input
+                type="text"
+                id="caesar-input"
+                class="input-text-all"
+                placeholder="Enter:"
+              />
+              <label for="affine-key-a" class="input-text mid-key"
+                >Enter the key a:</label
+              >
+              <input
+                type="number"
+                id="affine-key-a"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+              <label for="affine-key-b" class="input-text mid-key"
+                >Enter the key b:</label
+              >
+              <input
+                type="number"
+                id="affine-key-b"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+            </div>
+            <div class="btn-wrap">
+              <div class="button-row">
+                <button id="affine-encrypt-btn" class="blue-btn">
+                  Encrypt
+                </button>
+                <button id="affine-decrypt-btn" class="red-btn">Decrypt</button>
+              </div>
+              <button id="affine-brute-force-btn" class="green-btn">
+                Break Force Attack
+              </button>
+              <div class="result">Result:</div>
+              <div id="affine-result" class="result-all">No Result</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-info">
+      <div class="section-info-text">
+        <h1 id="content-1-4">I.IV. Transposition Cipher</h1>
+        <p>
+          In the fascinating world of cryptography, transposition ciphers stand
+          out as one of the oldest and simplest forms of encryption. Rather than
+          changing the actual letters or symbols (as substitution ciphers do),
+          transposition ciphers rearrange the positions of the characters
+          according to a specific system, creating a ciphertext that hides the
+          original message.
+        </p>
+      </div>
+      <div class="iframe-container">
+        <iframe
+          src="https://www.youtube.com/embed/bcyUJK1BvHw?autoplay=1&rel=0&iv_load_policy=3&color=white&playlist=bcyUJK1BvHw"
+          width="560"
+          height="315"
+          title="Transposition Cipher"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="section-demo">
+      <div class="demo">
+        <div class="section-info-text">
+          <h1>Transposition Cipher Demo</h1>
+          <div class="input-flex-1">
+            <div class="id-wrap">
+              <label for="transposition-input" class="input-text"
+                >Enter your text (Plain text or Cipher text):</label
+              >
+              <input
+                type="text"
+                id="transposition-input"
+                class="input-text-all"
+                placeholder="Enter:"
+              />
+              <label for="transposition-key" class="input-text mid-key"
+                >Enter the key:</label
+              >
+              <input
+                type="number"
+                id="transposition-key"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+            </div>
+            <div class="btn-wrap">
+              <div class="button-row">
+                <button id="transposition-encrypt-btn" class="blue-btn">
+                  Encrypt
+                </button>
+                <button id="transposition-decrypt-btn" class="red-btn">
+                  Decrypt
+                </button>
+              </div>
+              <div class="result">Result:</div>
+              <div id="transposition-result" class="result-all">No Result</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-info">
+      <div class="section-info-text">
+        <h1>II.RSA</h1>
+        <h2>II.I. RSA Cryptography</h2>
+        <p>
+          "RSA (Rivest-Shamir-Adleman) is a widely used asymmetric encryption
+          algorithm that relies on the mathematical properties of prime numbers.
+          It was invented in 1977 by Ron Rivest, Adi Shamir, and Leonard
+          Adleman. RSA is based on the difficulty of factoring large composite
+          numbers into their prime factors."
+        </p>
+      </div>
+    </section>
+
+    <section class="section-demo">
+      <div class="demo">
+        <div class="section-info-text">
+          <h1>RSA Keygen Demo</h1>
+          <div class="input-flex-1">
+            <div class="id-wrap">
+              <label for="rsa-keygen-p" class="input-text"
+                >Enter the first prime number p:</label
+              >
+              <input
+                type="number"
+                id="rsa-keygen-p"
+                class="input-text-all"
+                placeholder="NUM:"
+              />
+              <label for="rsa-keygen-q" class="input-text prime-num"
+                >Enter the second prime number q:</label
+              >
+              <input
+                type="number"
+                id="rsa-keygen-q"
+                class="input-text-all prime-num"
+                placeholder="NUM:"
+              />
+            </div>
+            <div class="btn-wrap">
+              <div class="button-row">
+                <button id="rsa-keygen-btn" class="generate-btn">
+                  Generate Key
+                </button>
+              </div>
+              <div class="result">Result:</div>
+              <div id="rsa-keygen-result" class="result-all">No Result</div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="section-info-text">
+          <h1>RSA Keygen Demo</h1>
+          <div class="input-flex-1">
+            <div class="id-wrap">
+              <label for="rsa-encrypt-input" class="input-text"
+                >Enter your text (Plain text or Cipher text):</label
+              >
+              <input
+                type="text"
+                id="rsa-encrypt-input"
+                class="input-text-all"
+                placeholder="Enter:"
+              />
+              <label for="rsa-encrypt-key-e" class="input-text mid-key"
+                >Enter the public key(e):</label
+              >
+              <input
+                type="number"
+                id="rsa-encrypt-key-e"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+              <label for="rsa-encrypt-key-n" class="input-text mid-key"
+                >Enter the modulus(n):</label
+              >
+              <input
+                type="number"
+                id="rsa-encrypt-key-n"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+              <div class="btn-wrap">
+                <div class="button-row">
+                  <button id="rsa-encrypt-btn" class="blue-btn">Encrypt</button>
+                </div>
+                <div class="result">Result:</div>
+                <div id="rsa-encrypt-result" class="result-all">No Result</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="section-info-text">
+          <h1>RSA Keygen Demo</h1>
+          <div class="input-flex-1">
+            <div class="id-wrap">
+              <label for="rsa-decrypt-input" class="input-text"
+                >Enter your text (Plain text or Cipher text):</label
+              >
+              <input
+                type="text"
+                id="rsa-decrypt-input"
+                class="input-text-all"
+                placeholder="Enter:"
+              />
+              <label for="rsa-decrypt-key-d" class="input-text mid-key"
+                >Enter the private key(d):</label
+              >
+              <input
+                type="number"
+                id="rsa-decrypt-key-d"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+              <label for="rsa-decrypt-key-n" class="input-text mid-key"
+                >Enter the modulus(n):</label
+              >
+              <input
+                type="number"
+                id="rsa-decrypt-key-n"
+                class="input-key-all"
+                placeholder="NUM"
+              />
+            </div>
+            <div class="btn-wrap">
+              <div class="button-row">
+                <button id="rsa-decrypt-btn" class="red-btn">Decrypt</button>
+              </div>
+              <div class="result">Result:</div>
+              <div id="rsa-decrypt-result" class="result-all">No Result</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer: Mengly + Lyheng -->
     <footer>
-      <div class="location-grid">
-        <img class="location" src="" alt="" />
-        <a href="#" class="navigation">
-          <div></div>
-          <div></div>
-          <div></div>
-        </a>
+      <div class="submitted-container">
+        <div class="sub-to">
+          <h1>Submitted to</h1>
+        </div>
+        <div class="sub-info">
+          <h2>Mr. LIM Seyha</h2>
+          <p>Mathematic Lecturer, Royal University Of Phnom Penh, Phnom Penh</p>
+          <p>Feb 10,2026</p>
+        </div>
       </div>
-      <div class="contact-us">
-        <p>CONTACT US</p>
-        <a href="#"><img src="../icon/mail.png" alt="" /> </a>
+      <div class="about-us-container">
+        <div class="text-aboutus">
+          <h1>About Us</h1>
+          <p>
+            The Faculty of Engineering of the Royal University of Phnom Penh was
+            established in 2013 with the vision of training students in the
+            field of engineering to be highly capable, innovative ideas with
+            ethical research to meet the needs and help develop current society
+            and globalization.
+          </p>
+        </div>
+        <div class="btn-aboutus">
+          <button><a href="#">Learn More</a></button>
+        </div>
+      </div>
+      <div class="contact-us-container">
+        <div class="contact-us">
+          <h1>OUR OFFICE</h1>
+          <div class="location-grid">
+            <img class="location" src="../src/icon/location.png" alt="" />
+            <div class="for-grid">
+              <a href="#" class="navigation" target="_blank">
+                <div>Facultuy of Engineering</div>
+                <div>Room 103, STEM Building,</div>
+              </a>
+              <div class="developer">
+                <div class="admin-left">
+                  <p>Admin San Sopheak</p>
+                  <p>Admin Sam Mengly</p>
+                  <p>Admin Soth Lyheng</p>
+                </div>
+                <div class="admin-right">
+                  <p>Admin Siv Souymeymey</p>
+                  <p>Admin Soeum Kimseang</p>
+                  <p>Admin Samath Vathana</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1>CONTACT US</h1>
+          <div class="icon-grid">
+            <i class="bx bxl-github"></i>
+            <a
+              class="github-icon"
+              href="https://github.com/JohnBidden"
+              target="_blank"
+            >
+              <span>https://github.com/JohnBidden</span>
+            </a>
+          </div>
+          <hr />
+          <p class="last-text">
+            Inspire from Faculty of Enginneering website @2026
+          </p>
+        </div>
       </div>
     </footer>
 
