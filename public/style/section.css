@@ -12,6 +12,10 @@
   cursor: pointer;
   display: inline-block;
 }
+.back a {
+  text-decoration: none;
+  color: #014164;
+}
 .section-info-text {
   width: 95%;
   margin: auto;

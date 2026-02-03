@@ -34,24 +34,30 @@
           <img class="faculty-logo" src="../src/images/faculty.svg" alt="" />
           <img src="../src/images/tittle.svg" alt="" class="title-logo" />
         </div>
-        <div class="header-right">
+        <div class="header-right" id="navLinks">
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
-            <li><a href="#">1. Caesar Cipher</a></li>
             <li>
-              <a href="#"
-                >1.2. General Shift Cipher
-                <i class="fa-solid fa-chevron-down"></i
+              <a href="#content-1"
+                >1. CAESAR CIPHER<i class="fa-solid fa-chevron-down"></i
+              ></a>
+            </li>
+            <li><a href="#content-2">II. GENERAL</a></li>
+            <li>
+              <a href="#content-3">III. AFFINE</a>
+            </li>
+            <li>
+              <a href="#content-4">IV. TRANSPODITION</a>
+            </li>
+            <li>
+              <a href="#content-5"
+                >2. RSA<i class="fa-solid fa-chevron-down"></i
               ></a>
             </li>
             <li>
-              <a href="#"
-                >II. RSA Cryptography <i class="fa-solid fa-chevron-down"></i
+              <a href="#content-6"
+                >CREDIT <i class="fa-solid fa-chevron-down"></i
               ></a>
-            </li>
-            <li><a href="#">III. FROM</a></li>
-            <li>
-              <a href="#">DEMO <i class="fa-solid fa-chevron-down"></i></a>
             </li>
           </ul>
           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -63,14 +69,16 @@
           Decryption <br />
           System
         </h1>
-        <h2>Discrete Math</h2>
+        <h2 id="content-1">Discrete Math</h2>
       </div>
     </header>
 
     <!-- Section: Mey + Kim + V -->
     <section class="section-info">
       <div class="back">
-        <p><i class="fa-solid fa-arrow-left"></i>back</p>
+        <a href="#">
+          <p><i class="fa-solid fa-arrow-left"></i>back</p>
+        </a>
       </div>
       <div class="section-info-text">
         <h1>I.Classical Cryptography</h1>
@@ -155,7 +163,7 @@
                 </button>
                 <button id="caesar-decrypt-btn" class="red-btn">Decrypt</button>
               </div>
-              <div class="result">Result:</div>
+              <div id="content-2" class="result">Result:</div>
               <div id="caesar-result" class="result-all">No Result</div>
             </div>
           </div>
@@ -209,7 +217,7 @@
               <button id="shift-brute-force-btn" class="green-btn">
                 Break Force Attack
               </button>
-              <div class="result">Result:</div>
+              <div id="content-3" class="result">Result:</div>
               <div id="shift-result" class="result-all">No Result</div>
             </div>
           </div>
@@ -274,7 +282,7 @@
               <button id="affine-brute-force-btn" class="green-btn">
                 Break Force Attack
               </button>
-              <div class="result">Result:</div>
+              <div id="content-4" class="result">Result:</div>
               <div id="affine-result" class="result-all">No Result</div>
             </div>
           </div>
@@ -284,7 +292,7 @@
 
     <section class="section-info">
       <div class="section-info-text">
-        <h1 id="content-1-4">I.IV. Transposition Cipher</h1>
+        <h1>I.IV. Transposition Cipher</h1>
         <p>
           In the fascinating world of cryptography, transposition ciphers stand
           out as one of the oldest and simplest forms of encryption. Rather than
@@ -340,7 +348,7 @@
                   Decrypt
                 </button>
               </div>
-              <div class="result">Result:</div>
+              <div id="content-5" class="result">Result:</div>
               <div id="transposition-result" class="result-all">No Result</div>
             </div>
           </div>
@@ -477,7 +485,7 @@
               <div class="button-row">
                 <button id="rsa-decrypt-btn" class="red-btn">Decrypt</button>
               </div>
-              <div class="result">Result:</div>
+              <div id="content-6" class="result">Result:</div>
               <div id="rsa-decrypt-result" class="result-all">No Result</div>
             </div>
           </div>
@@ -518,7 +526,11 @@
           <div class="location-grid">
             <img class="location" src="../src/icon/location.png" alt="" />
             <div class="for-grid">
-              <a href="#" class="navigation" target="_blank">
+              <a
+                href="https://maps.app.goo.gl/bHbq6sArx1D416c78"
+                class="navigation"
+                target="_blank"
+              >
                 <div>Facultuy of Engineering</div>
                 <div>Room 103, STEM Building,</div>
               </a>
@@ -557,6 +569,13 @@
 
     <!--------- JavaScript------------->
     <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
       function scrollRow(btn, direction) {
         const row = btn.parentElement;
         const container = row.querySelector(".scroll-container");
