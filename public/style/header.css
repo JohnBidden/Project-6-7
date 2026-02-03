@@ -163,7 +163,7 @@ header {
   display: block;
   position: fixed;
   top: 25px;
-  right: 20px;
+  right: 35px;
   color: white;
   font-size: 25px;
   cursor: pointer;
@@ -203,6 +203,74 @@ header {
 
   .header-right ul {
     display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .fa-bars {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 1001;
+  }
+
+  /* Show close icon when menu is open */
+  .fa-xmark {
+    display: block !important;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    z-index: 1002;
+  }
+
+  /* Hide the navigation container by default */
+  .header-right {
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    right: -250px; /* HIDDEN OFF-SCREEN by default */
+    background-color: #014164;
+    text-align: left;
+    z-index: 20000;
+    transition: right 0.5s ease;
+    display: block;
+    padding-top: 80px;
+  }
+  /* Hide the regular navigation list */
+  .header-right ul {
+    display: block;
+    width: 100%;
+  }
+
+  .header-right ul li {
+    display: block;
+    margin: 0;
+    padding: 15px 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .header-right ul li a {
+    font-size: 1.1rem;
+    display: block;
+  }
+
+  .header-right ul li::after {
+    display: none; /* Remove hover effect on mobile */
   }
 }
 
