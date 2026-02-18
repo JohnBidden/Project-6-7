@@ -29,9 +29,16 @@
     <header>
       <div class="header-fixed">
         <div class="header-left">
-          <img class="rupp-logo" src="../src/images/rupp.svg" alt="" />
+          <a href="https://www.rupp.edu.kh/" target="_blank" title="go to rupp"
+            ><img class="rupp-logo" src="../src/images/rupp.svg" alt=""
+          /></a>
           <hr />
-          <img class="faculty-logo" src="../src/images/faculty.svg" alt="" />
+          <a
+            href="https://www.fe.rupp.edu.kh/"
+            target="_blank"
+            title="go to faculty"
+            ><img class="faculty-logo" src="../src/images/faculty.svg" alt=""
+          /></a>
           <img src="../src/images/tittle.svg" alt="" class="title-logo" />
         </div>
         <div class="header-right" id="navLinks">
@@ -92,7 +99,9 @@
           technique came to be known as the Caesar Cipher.
         </p>
         <p class="strong-p">
-          Source:<a href="https://caesarcipher.net/">caesarcipher.net</a>
+          Source:<a href="https://www.dcode.fr/caesar-cipher" target="_blank"
+            >caesarcipher.net</a
+          >
         </p>
         <div class="main-img">
           <img src="../src/images/cryptex.jpg" alt="" />
@@ -241,7 +250,7 @@
     <section class="section-demo">
       <div class="demo">
         <div class="section-info-text">
-          <h1>General Shift Cipher Demo</h1>
+          <h1>Affine Cipher Demo</h1>
           <div class="input-flex-1">
             <div class="id-wrap">
               <label for="affine-input" class="input-text"
@@ -249,7 +258,7 @@
               >
               <input
                 type="text"
-                id="caesar-input"
+                id="affine-input"
                 class="input-text-all"
                 placeholder="Enter:"
               />
@@ -327,7 +336,7 @@
                 type="text"
                 id="transposition-input"
                 class="input-text-all"
-                placeholder="Enter:"
+                placeholder="Enter: hleol"
               />
               <label for="transposition-key" class="input-text mid-key"
                 >Enter the key:</label
@@ -531,19 +540,49 @@
                 class="navigation"
                 target="_blank"
               >
-                <div>Facultuy of Engineering</div>
-                <div>Room 103, STEM Building,</div>
+                Angkor Wat Siem Reap, <br />
+                Cambodia
               </a>
               <div class="developer">
                 <div class="admin-left">
-                  <p>Admin San Sopheak</p>
-                  <p>Admin Sam Mengly</p>
-                  <p>Admin Soth Lyheng</p>
+                  <a
+                    href="https://www.facebook.com/1BestPerson"
+                    target="_blank"
+                    title="facebook"
+                    >Admin San Sopheak</a
+                  >
+                  <a
+                    href="https://www.facebook.com/sam.mengly.2025"
+                    target="_blank"
+                    title="facebook"
+                    >Admin Sam Mengly</a
+                  >
+                  <a
+                    href="https://www.facebook.com/soth.lyheng"
+                    target="_blank"
+                    title="facebook"
+                    >Admin Soth Lyheng</a
+                  >
                 </div>
                 <div class="admin-right">
-                  <p>Admin Siv Souymeymey</p>
-                  <p>Admin Soeum Kimseang</p>
-                  <p>Admin Samath Vathana</p>
+                  <a
+                    href="https://www.facebook.com/siv.souymeymey"
+                    target="_blank"
+                    title="facebook"
+                    >Admin Siv Souymeymey</a
+                  >
+                  <a
+                    href="https://www.facebook.com/kimsaeng.souem"
+                    target="_blank"
+                    title="facebook"
+                    >Admin Soeum Kimseang</a
+                  >
+                  <a
+                    href="https://www.facebook.com/RenToDai"
+                    target="_blank"
+                    title="facebook"
+                    >Admin Samath Vathana</a
+                  >
                 </div>
               </div>
             </div>
@@ -568,31 +607,11 @@
     </footer>
 
     <!--------- JavaScript------------->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-250px";
-      }
-      function scrollRow(btn, direction) {
-        const row = btn.parentElement;
-        const container = row.querySelector(".scroll-container");
-        const scrollAmount = 500;
-        container.scrollLeft += scrollAmount * direction;
-      }
-      window.addEventListener("scroll", function () {
-        const header = document.querySelector(".header-fixed");
-
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
-    </script>
+    <script src="../script/general.js"></script>
+    <script src="../script/function/caesar.js"></script>
+    <script src="../script/function/generalShift.js"></script>
+    <script src="../script/function/affine.js"></script>
+    <script src="../script/function/transposition.js"></script>
+    <script src="../script/function/rsa.js"></script>
   </body>
 </html>
