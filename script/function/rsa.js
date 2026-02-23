@@ -1,5 +1,5 @@
 // =====================================
-// RSA DEMO (Clean & Professional)
+// RSA DEMO
 // Controls: keygen + encrypt + decrypt
 // =====================================
 

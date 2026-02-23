@@ -1,7 +1,4 @@
-// ===============================
-// TRANSPOSITION CIPHER (CLEAN)
-// Always outputs UPPERCASE
-// ===============================
+// ===== TRANSPOSITION CIPHER =====
 
 (() => {
   const input = document.getElementById("transposition-input");
