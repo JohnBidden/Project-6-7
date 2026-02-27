@@ -187,26 +187,10 @@ header {
     overflow: hidden;
   }
 
-  .header-fixed {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-
   .header-right {
-    max-width: 60px; /* Collapse right side — only hamburger icon shows */
+    max-width: 200px;
     flex: none;
     overflow: hidden;
-  }
-
-  .header-bg-text {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: calc(100vw - 40px);
-    max-width: 100%;
-    box-sizing: border-box;
   }
 }
 /*---------- TABLET ----------*/
