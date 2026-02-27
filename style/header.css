@@ -173,6 +173,42 @@ header {
   border: 2px solid rgba(255, 255, 255, 0.3);
   z-index: 1001;
 }
+/*---------- IPHONE 14 PM to 16 PM (390px–430px range) ----------*/
+@media (min-width: 390px) and (max-width: 759px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  header {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .header-fixed {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .header-right {
+    max-width: 60px; /* Collapse right side — only hamburger icon shows */
+    flex: none;
+    overflow: hidden;
+  }
+
+  .header-bg-text {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100vw - 40px);
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
 /*---------- TABLET ----------*/
 @media (min-width: 760px) {
   header {

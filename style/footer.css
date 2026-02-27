@@ -141,7 +141,7 @@
 }
 .developer a {
   line-height: clamp(1.7, 2.2vw, 1.9);
-  font-size: clamp(1.7rem, 2.5vw, 1.9rem);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
   cursor: pointer;
 }
 .admin-left {
@@ -186,4 +186,12 @@
 .icon-grid {
   display: grid;
   grid-template-columns: 35px 100px;
+}
+/*---------- IPHONE 14 PM to 16 PM (390px–430px range) ----------*/
+@media (min-width: 390px) and (max-width: 759px) {
+  .developer a {
+    line-height: clamp(1.7, 2.2vw, 1.9);
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    cursor: pointer;
+  }
 }
